@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1f3352">
+    <title>
+      Add new product · Smart Warehouse
+    </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <img class="brand-logo" src="assets/warehouse-logo.svg" alt="Smart Warehouse">
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <div class="nav-label" data-en="Operations">
+            Operations
+          </div>
+          <a class="nav-item" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <rect x="4" y="4" width="6" height="6" rx="1"/>
+              <rect x="14" y="4" width="6" height="6" rx="1"/>
+              <rect x="4" y="14" width="6" height="6" rx="1"/>
+              <rect x="14" y="14" width="6" height="6" rx="1"/>
+            </svg>
+            <span data-en="Dashboard">
+              Dashboard
+            </span>
+          </a>
+          <a class="nav-item" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>
+            </svg>
+            <span data-en="Alerts">
+              Alerts
+            </span>
+            <small class="badge">
+              5
+            </small>
+          </a>
+          <a class="nav-item" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/>
+              <path d="m4.5 7.8 7.5 4.4 7.5-4.4M12 12v9"/>
+            </svg>
+            <span data-en="Inventory">
+              Inventory
+            </span>
+          </a>
+          <a class="nav-item active" href="#" aria-current="page">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M5 4v16M9 4v16m4-16v16m4-16v16m3-16v16"/>
+            </svg>
+            <span data-en="Products">
+              Products
+            </span>
+          </a>
+          <div class="nav-label planning" data-en="Planning">
+            Planning
+          </div>
+          <a class="nav-item" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="m3 17 6-6 4 4 8-9M15 6h6v6"/>
+            </svg>
+            <span data-en="AI forecast">
+              AI forecast
+            </span>
+          </a>
+          <a class="nav-item" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <rect x="5" y="4" width="14" height="17" rx="2"/>
+              <path d="M9 4V2h6v2M9 10h6m-6 4h6m-6 4h3"/>
+            </svg>
+            <span data-en="Purchase orders">
+              Purchase orders
+            </span>
+            <small class="badge">
+              6
+            </small>
+          </a>
+          <a class="nav-item" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M3 7h12v11H3zM15 11h4l3 4v3h-7z"/>
+              <circle cx="7.5" cy="19" r="1.5"/>
+              <circle cx="18.5" cy="19" r="1.5"/>
+            </svg>
+            <span data-en="Suppliers">
+              Suppliers
+            </span>
+          </a>
+          <a class="nav-item" href="#">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+              <path d="M5 20v-7m7 7V4m7 16V9"/>
+            </svg>
+            <span data-en="Reports">
+              Reports
+            </span>
+          </a>
+        </nav>
+        <div class="profile">
+          <div class="avatar">
+            WM
+          </div>
+          <div>
+            <div class="profile-name" data-en="Warehouse">
+              Warehouâ€¦
+            </div>
+            <div class="profile-role" data-en="Manager">
+              Manager
+            </div>
+          </div>
+          <button class="team" type="button" aria-label="Active users" aria-expanded="false" aria-controls="users-dropdown">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="9" cy="8" r="4"/>
+              <path d="M2 21v-2a7 7 0 0 1 14 0v2m3-12a4 4 0 0 1 0 7m1 2a5 5 0 0 1 3 5"/>
+            </svg>
+            <i>
+              5
+            </i>
+          </button>
+          <section class="users-dropdown" id="users-dropdown" aria-label="Active users" hidden>
+            <header class="users-header">
+              <div><strong data-en="Active users">Active users</strong><span data-en="Signed in to the website">Signed in to the website</span></div>
+              <b><i></i><span data-en="5 online">5 online</span></b>
+            </header>
+            <div class="users-list" id="active-users-list">
+              <div class="user-row"><span class="user-avatar lavender">AH<i></i></span><div class="user-info"><strong>Ahmed Hassan</strong><span>ahmed@smartwh.com</span></div><em data-en="Employee">Employee</em></div>
+              <div class="user-row"><span class="user-avatar mint">SM<i></i></span><div class="user-info"><strong>Sara Mostafa</strong><span>sara@smartwh.com</span></div><em data-en="Employee">Employee</em></div>
+              <div class="user-row"><span class="user-avatar sand">KA<i></i></span><div class="user-info"><strong>Karim Adel</strong><span>karim@supplier.com</span></div><em class="merchant" data-en="Merchant">Merchant</em></div>
+              <div class="user-row"><span class="user-avatar lilac">NY<i></i></span><div class="user-info"><strong>Nour Youssef</strong><span>nour@smartwh.com</span></div><em data-en="Employee">Employee</em></div>
+              <div class="user-row"><span class="user-avatar rose"><i class="offline"></i>MT</span><div class="user-info"><strong>Mona Tarek</strong><span data-en="Active 8 min ago">Active 8 min ago</span></div><em class="merchant" data-en="Merchant">Merchant</em></div>
+            </div>
+            <div class="users-scrollbar" aria-label="Scroll active users" role="scrollbar" aria-controls="active-users-list" aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0"><span class="users-scrollbar-thumb"></span></div>
+            <div class="current-user"><span class="current-avatar">WM</span><div><strong data-en="Warehouse Manager">Warehouse Manager</strong><span data-en="Admin">Admin</span></div><button type="button" class="logout" aria-label="Sign out"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-3"/><path d="M10 12h10m-4-4 4 4-4 4"/></svg></button></div>
+          </section>
+        </div>
+      </aside>
+      <main>
+        <div class="topbar">
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <circle cx="10.8" cy="10.8" r="6.8"/>
+              <path d="m16 16 5 5"/>
+            </svg>
+            <input id="search" type="search" placeholder="Search products, SKUs..." aria-label="Search products">
+          </label>
+          <div class="locale">
+            <button type="button" class="locale-link selected" id="english" data-lang="en" aria-pressed="true">
+              English
+            </button>
+            <button type="button" class="locale-link" id="arabic" data-lang="ar" aria-pressed="false">
+              العربية
+            </button>
+          </div>
+          <button type="button" class="bell" aria-label="Notifications">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>
+            </svg>
+          </button>
+        </div>
+        <section class="heading">
+          <a class="back" href="#">
+            <span aria-hidden="true">
+              &larr;
+            </span>
+            <span data-en="Products">
+              Products
+            </span>
+          </a>
+          <h1 data-en="Add new product">
+            Add new product
+          </h1>
+          <p data-en="Fill in the details">
+            Fill in the details
+          </p>
+        </section>
+        <form id="product-form" class="form-card">
+          <div class="grid">
+            <div class="field">
+              <label for="name" data-en="Name">
+                Name
+              </label>
+              <input id="name" name="name" type="text" placeholder="product 1 (copy)" required>
+            </div>
+            <div class="field">
+              <label for="category" data-en="Category">
+                Category
+              </label>
+              <input id="category" name="category" type="text" placeholder="product" required>
+            </div>
+            <div class="field">
+              <label for="purchase" data-en="Purchase price (EGP)">
+                Purchase price (EGP)
+              </label>
+              <input id="purchase" name="purchase" type="number" min="0" step="0.01" placeholder="0.00" required>
+            </div>
+            <div class="field">
+              <label for="sell" data-en="Sell price (EGP)">
+                Sell price (EGP)
+              </label>
+              <input id="sell" name="sell" type="number" min="0" step="0.01" placeholder="0.00" required>
+            </div>
+            <div class="field">
+              <label for="sku" data-en="SKU">
+                SKU
+              </label>
+              <input id="sku" name="sku" type="text" placeholder="e.g. SKU-2500">
+            </div>
+          </div>
+        </form>
+        <div class="actions">
+          <button type="reset" id="cancel" form="product-form" data-en="Cancel">
+            Cancel
+          </button>
+          <button type="submit" form="product-form" class="primary" data-en="Add product">
+            Add product
+          </button>
+        </div>
+        <footer>
+          <span data-en="© 2027 Smart Warehouse. All rights reserved.">
+            © 2027 Smart Warehouse. All rights reserved.
+          </span>
+        </footer>
+      </main>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite">
+    </div>
+    <script src="locales/en.js"></script>
+    <script src="locales/ar.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
